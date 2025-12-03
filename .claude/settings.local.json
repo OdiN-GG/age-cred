@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(mkdir:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npm start)",
+      "Bash(npx expo start)",
+      "Bash(npx expo start:*)",
+      "Bash(timeout /t 5 /nobreak)",
+      "mcp__react-native-debugger__getConnectedApps",
+      "Bash(adb shell \"run-as com.anonymous.agecred ls -la /data/data/com.anonymous.agecred/\")",
+      "Bash(adb shell \"run-as com.anonymous.agecred ls -la /data/data/com.anonymous.agecred/files/\")",
+      "Bash(adb shell \"run-as com.anonymous.agecred ls -la /data/data/com.anonymous.agecred/files/SQLite/\")",
+      "Bash(adb shell \"run-as com.anonymous.agecred sqlite3 /data/data/com.anonymous.agecred/files/SQLite/agecred.db ''.tables''\")",
+      "Bash(adb shell:*)",
+      "Bash(adb pull:*)",
+      "Bash(adb exec-out:*)",
+      "Bash(dir:*)",
+      "Bash(sqlite3:*)",
+      "Bash(powershell -Command \"Get-Item ''E:\\ReactNative\\age-cred\\agecred.db'' | Select-Object Name,Length\")",
+      "Bash(adb logcat:*)",
+      "Bash(timeout 10 adb logcat:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
