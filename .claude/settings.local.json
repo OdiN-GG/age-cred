@@ -20,7 +20,10 @@
       "Bash(sqlite3:*)",
       "Bash(powershell -Command \"Get-Item ''E:\\ReactNative\\age-cred\\agecred.db'' | Select-Object Name,Length\")",
       "Bash(adb logcat:*)",
-      "Bash(timeout 10 adb logcat:*)"
+      "Bash(timeout 10 adb logcat:*)",
+      "Bash(claude mcp add:*)",
+      "Bash(taskkill:*)",
+      "Bash(npx supabase:*)"
     ],
     "deny": [],
     "ask": []

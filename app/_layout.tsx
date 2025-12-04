@@ -53,8 +53,26 @@ export default function RootLayoutNav() {
     <Stack>
       <Stack.Screen name="index" options={{ headerShown: false }} />
       <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+
+      {/* Auth Routes */}
+      <Stack.Screen name="auth/login" options={{ headerShown: false }} />
+      <Stack.Screen name="auth/signup" options={{ headerShown: false }} />
+      <Stack.Screen name="auth/forgot-password" options={{ headerShown: false }} />
+
+      {/* Pricing */}
+      <Stack.Screen
+        name="pricing"
+        options={{
+          title: 'Planos e Preços',
+          presentation: 'modal'
+        }}
+      />
+
+      {/* Client Routes */}
       <Stack.Screen name="clients/add" options={{ title: 'Novo Cliente', presentation: 'modal' }} />
       <Stack.Screen name="clients/[id]" options={{ title: 'Detalhes do Cliente' }} />
+
+      {/* Loan Routes */}
       <Stack.Screen name="loans/add" options={{ title: 'Novo Empréstimo', presentation: 'modal' }} />
       <Stack.Screen name="loans/[id]" options={{ title: 'Detalhes do Empréstimo' }} />
     </Stack>
